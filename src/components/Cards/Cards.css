@@ -1,0 +1,17 @@
+.card_feature{
+    box-shadow: 0px 0px 10px #272343;
+    width: 300px;
+    padding: 2vw;
+    text-align: center;
+    
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-img{
+    width: 7vw;
+    margin: 1vw;
+    /* border: 1px solid red; */
+    
+}
+
