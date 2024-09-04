@@ -3,7 +3,8 @@ import "./Home.css";
 let Home =()=>{
     return(
         <>
-            <h1>Home Page</h1>
+            <div className="heading heading_color">Notes App📚</div>
+            <p className="sub_heading sub_heading">Your Task Reminder App</p>
         </>
     )
 }

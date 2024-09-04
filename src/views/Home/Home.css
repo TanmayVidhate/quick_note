@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fffffe;
+}
+
+.heading_color{
+    color: #272343;
+}
+
+.sub_heading{
+    color: #2d334a;
+}
+
+.heading{
+    font-size: 3vw;
+    text-align: center;
+    font-weight: 900;
+}
+
+.sub_heading{
+    font-size: 1.8vw;
+    text-align: center;
+    font-weight: 800;
+}
