@@ -4,8 +4,8 @@ const Cards = ({image,desc})=>{
     return(
         <>  
             <div className="card_feature">
-            <img src={image} alt="Secured" className="card-img"/>
-            <p className="card-desc">{desc}</p>
+            <img src={image} alt="Secured" className="card_img"/>
+            <p className="card_desc">{desc}</p>
             </div>
         </>
     )
