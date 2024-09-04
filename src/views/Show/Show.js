@@ -1,9 +1,15 @@
 import React from "react";
 import './Show.css';
-const Show =()=>{
-    return(
+import HomeIcon from "../../components/HomeIcon/HomeIcon";
+const Show = () => {
+    return (
         <>
-            <h1>Show Page</h1>
+            <div className="main">
+                
+                <p className="heading heading_color">Show Notes 📃</p>
+
+                <HomeIcon/>
+            </div>
         </>
     )
 }
