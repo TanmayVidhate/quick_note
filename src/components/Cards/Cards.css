@@ -20,3 +20,60 @@
     color: #2d334a;
 }
 
+
+/*small Device*/
+@media screen and (max-width:600px){
+    .card_feature{
+        width: 160px;
+        padding: 1.7vw;
+        margin: 1.4vw;
+    }
+
+    .card_desc{
+        font-size: 1.7vw;
+    }
+
+    .card_img{
+        width: 7vw;
+    }
+}
+
+/*Normal Device*/
+@media screen and (min-width:601px) and (max-width:768px){
+    .card_feature{
+        width: 250px;
+        padding: 2vw;
+        margin: 1.8vw;
+    }
+
+    .card_desc{
+        font-size: 2vw;
+    }
+
+    .card_img{
+        width: 10vw;
+    }
+}
+
+/*Tablets Device*/
+@media screen and (min-width:769px ) and (max-width:992px){
+    .card_feature{
+        /* width: 300px; */
+        padding: 2vw;
+        margin: 1vw;
+    }
+
+    .card_desc{
+        font-size: 2vw;
+    }
+
+    .card_img{
+        width: 11vw;
+    }
+}
+
+
+/*Large Device*/
+@media screen and (min-width:993px ) and (max-width:1250px){
+
+}

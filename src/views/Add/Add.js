@@ -60,15 +60,18 @@ const Add = () => {
                         }}
                     />
 
-                    <EmojiPicker open={opendilog} width={"670px"} height={"400px"}
-                        skinTonesDisabled
-                        onEmojiClick={(emojiobj) => {
+                    <EmojiPicker 
+                    open={opendilog} 
+                    width={"670px"} 
+                    height={"400px"}
+                    skinTonesDisabled
+                    onEmojiClick={(emojiobj) => {
                             setEmoji(emojiobj.emoji)
                             setDilog(false)
                         }} />
 
-                    <div className="emoji-container" onClick={(emoji) => setDilog(true)}>
-                        {emoji ? emoji : "Select Emoji"}
+                    <div className="emoji-container" onClick={(emoji) => setDilog(false)}>
+                        {emoji ? emoji:"Select Emoji"}
                     </div>
 
                     <select className="input_field" onChange={(e)=>{setCategory(e.target.value)}}>
@@ -79,7 +82,7 @@ const Add = () => {
                         <option value="personal">Personal</option>
                     </select>
 
-                    <button type="button" className="btn " onClick={addNote}>
+                    <button type="button" className="btn" onClick={addNote}>
                         + Add Note
                     </button>
 

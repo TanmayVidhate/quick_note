@@ -8,7 +8,7 @@ body {
     background-color: #fffffe;
 }
 
-.main{
+.main {
     /* border: 1px solid red; */
     margin-top: 3vw;
     padding: 2vw;
@@ -38,7 +38,7 @@ body {
     /* background-color: #272343; */
 }
 
-.btn{
+.btn {
     margin: 1vw;
     min-width: 5vw;
     padding: 1vw;
@@ -49,19 +49,101 @@ body {
     /* border: none; */
 }
 
-.btn-yellow{
+.btn-yellow {
     background-color: #ffd803;
-   
+
 }
 
-.btn-gray{
+.btn-gray {
     background-color: #bae8e8;
-    
+
 }
 
-.cards_holder{
+.cards_holder {
     display: flex;
     justify-content: space-evenly;
     margin-top: 3vw;
     margin-bottom: 5vw;
 }
+
+/*small Device*/
+@media screen and (max-width:600px) {
+    .cards_holder {
+        flex-wrap: wrap;
+        margin-top: 1vw;
+    }
+
+    .btn {
+        margin: 1.2vw;
+        min-width: 5vw;
+        padding: 1.3vw;
+        font-size: 1.5vw;
+    }
+
+    .heading {
+        font-size: 3.5vw;
+        margin-top: 2vw;
+    }
+
+    .sub_heading {
+        margin-top: 1vw;
+        font-size: 2vw;
+        margin-bottom: 2vw;
+    }
+}
+
+/*Normal Device*/
+@media screen and (min-width:601px) and (max-width:768px) {
+    .cards_holder {
+        flex-wrap: wrap;
+        margin-top: 2vw;
+    }
+
+    .btn {
+        margin: 1.8vw;
+        min-width: 5vw;
+        padding: 1.8vw;
+        font-size: 1.8vw;
+    }
+
+    .heading {
+        font-size: 3.7vw;
+        margin-top: 2vw;
+    }
+
+    .sub_heading {
+        margin-top: 1vw;
+        font-size: 2vw;
+        margin-bottom: 1vw;
+    }
+}
+
+/*Tablets Device*/
+@media screen and (min-width:769px) and (max-width:992px) {
+    .cards_holder {
+        flex-wrap: wrap;
+        margin-top: 3vw;
+    }
+
+    .btn {
+        margin: 1vw;
+        min-width: 5vw;
+        padding: 1.7vw;
+        font-size: 1.8vw;
+    }
+
+    .heading {
+        font-size: 3.8vw;
+        font-weight: 800;
+        margin-top: 2vw;
+    }
+
+    .sub_heading {
+        margin-top: 1vw;
+        font-size: 1.8vw;
+    }
+}
+
+
+/*Large Device*/
+@media screen and (min-width:993px) and (max-width:1250px) {}
