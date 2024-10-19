@@ -4,6 +4,7 @@ import HomeIcon from "../../components/HomeIcon/HomeIcon";
 import EmojiPicker from 'emoji-picker-react';
 import { json } from "react-router-dom";
 import toast from "react-hot-toast";
+import { THEME } from "../../Config/data";
 
 const Add = () => {
 
@@ -25,7 +26,7 @@ const Add = () => {
 
         notes.push(noteobj);
 
-        localStorage.setItem("notes", JSON.stringify(notes));
+        localStorage.setItem("notes",JSON.stringify(notes));
 
         toast.success("Note Added Successfully!");
 
@@ -37,8 +38,8 @@ const Add = () => {
 
     return (
         <>
-            <div className="main">
-                <p className="heading heading_color">Add Notes ✒</p>
+            <div className="main" style={{background:THEME.main}}>
+                <p className="heading" style={{color:THEME.headline}}>Add Notes ✒</p>
                 <form>
                     <input
                         type="text"
@@ -82,7 +83,7 @@ const Add = () => {
                         <option value="personal">Personal</option>
                     </select>
 
-                    <button type="button" className="btn" onClick={addNote}>
+                    <button type="button" className="btn" onClick={addNote} style={{background:THEME.button,color:THEME.button_txt}}>
                         + Add Note
                     </button>
 

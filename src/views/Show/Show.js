@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import './Show.css';
 import HomeIcon from "../../components/HomeIcon/HomeIcon";
 import NotesCard from "../../components/NoteCard/NoteCard";
+import { THEME } from "../../Config/data"
+
 const Show = () => {
     const [notes, setNotes] = useState([]);
 
@@ -11,10 +13,11 @@ const Show = () => {
     }, []);
 
     return (
-        <>
-            <div className="main">
 
-                <p className="heading heading_color">Show Notes 📃</p>
+        <>
+            <div className="main" style={{background:THEME.main}}>
+
+                <p className="heading heading_color" style={{color:THEME.headline}}>Show Notes 📃</p>
                 <div className="note-conatiner">
    
                 {

@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     background-color: #fffffe;
-}
+} */
 
 .main {
     /* border: 1px solid red; */
@@ -14,9 +14,9 @@ body {
     padding: 2vw;
 }
 
-.heading_color {
+/* .heading_color {
     color: #272343;
-}
+} */
 
 .sub_heading {
     color: #DAD4B5;
@@ -44,7 +44,6 @@ body {
     padding: 1vw;
     border-radius: 5px;
     font-weight: bold;
-    color: #2d334a;
     cursor: pointer;
     /* border: none; */
 }

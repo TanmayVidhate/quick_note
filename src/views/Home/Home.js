@@ -5,13 +5,15 @@ import security from "../../components/Cards/security.png"
 import loved from "../../components/Cards/loved.png"
 import ui from "../../components/Cards/ui.png"
 import { Link } from "react-router-dom";
+import { THEME } from "../../Config/data.js";
+
 let Home = () => {
     return (
         <>
-            <div className="main">
+            <div className="main" style={{background:THEME.main}}>
 
-                <div className="heading heading_color">Notes App📚</div>
-                <p className="sub_heading ">Your Notes Taking App. Never Miss Any Important Things.</p>
+                <div className="heading heading_color" style={{color:THEME.headline}}>Notes App📚</div>
+                <p className="sub_heading">Your Notes Taking App. Never Miss Any Important Things.</p>
 
                 <div className="cards_holder">
 
@@ -24,11 +26,11 @@ let Home = () => {
 
                 <div className="btn-holder">
                     <Link to="/add">
-                        <button className="btn btn-yellow">✒ Add Note</button>
+                        <button className="btn" style={{color:THEME.button_txt,background:THEME.button1}}>✒ Add Note</button>
                     </Link>
 
                     <Link to="/show">
-                    <button className="btn btn-gray">📃 Show Notes </button>
+                    <button className="btn" style={{color:THEME.button_txt,background:THEME.button}}>📃 Show Notes </button>
                     </Link>
 
                    
